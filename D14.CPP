@@ -7,12 +7,11 @@ void f(int i, int n){
         return;
     }
     n = n+i;
-    f(i+1, n-1);
+    f(i+i, n-1);
 }
 
 int main(){
     int n;
     cin >> n;
-    f(0, n);
-    cout << n;
+    f(1, n);
 }

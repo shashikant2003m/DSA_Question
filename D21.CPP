@@ -3,6 +3,10 @@
 using namespace std;
 
 int fun(int arr, int n){
+    for (size_t i = 0; i < count; i++)
+    {
+        /* code */
+    }
     
 }
 
@@ -14,5 +18,7 @@ int main(){
     {
         cin >> arr[i];
     }
+
+
     
 }

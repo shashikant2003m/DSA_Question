@@ -27,7 +27,4 @@ int main(){
     {
         cout << "array is: " << arr[i];
     }
-    
-    
-    
 }

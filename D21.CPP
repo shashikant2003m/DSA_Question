@@ -26,7 +26,7 @@ int main(){
 
     for (int i = 0; i < n; i++)
     {
-        cin >> i;`
+        cin >> i;
         arr->push_back(i);
     }
 

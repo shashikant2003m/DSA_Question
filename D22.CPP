@@ -7,7 +7,6 @@ using namespace std;
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
-        int n = nums.size();
 
         // Step 1: Reverse whole array
         reverse(nums.begin(), nums.end());

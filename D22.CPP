@@ -8,13 +8,10 @@ class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
 
-        // Step 1: Reverse whole array
         reverse(nums.begin(), nums.end());
 
-        // Step 2: Reverse first k elements
         reverse(nums.begin(), nums.begin() + k);
 
-        // Step 3: Reverse remaining n-k elements
         reverse(nums.begin() + k, nums.end());
     }
 };
@@ -30,7 +27,7 @@ int main(){
     {
         cin >> nums[i];
     }
-    k = k % n; // Handle cases where k >= n
+    k = k % n;
     Solution sol;
     sol.rotate(nums, k);
 

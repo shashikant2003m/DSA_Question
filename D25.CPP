@@ -1,19 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void pattern(string s){
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            cout << s << " ";
+void pattern(int n){
+    for(int i = 0; i<n;i++) {
+    // space
+        for(int j = 0; j<n-i-1;j++) {
+            cout << " ";
         }
-        cout << endl ;
+        // star
+        for(int j = 0; j< 2 * i+1; j++) {
+            cout << "*";
+        }
+        // space
+        for(int j = 0; j<n-i-1;j++) {
+            cout << " ";
+        }
+        cout << endl;
     }
 }
 
 int main(){
-    string s = "*";
-    pattern(s);
+    int n;
+    cin >> n;
+    pattern(n);
     return 0;
 }

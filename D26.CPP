@@ -10,7 +10,16 @@ void pairs(){
 
     pair<int, int> arr[] = {{1,2}, {3,4}, {5,6}};
 
-    cout << arr[1].second;
+    cout << arr[1].second << endl;
+
+    vector<pair<int, int>> v;
+
+    v.push_back({1, 2});
+    v.push_back({3, 4});
+
+    for (auto p : v) {
+        cout << p.first << " " << p.second << endl;
+    }
 }
 
 int main(){

@@ -12,6 +12,13 @@ void vectors(){
     cout << v.size() << endl;       // number of elements
     int cap = v.capacity();
     cout << cap << endl;   // allocated memory
+
+    int n = 100;
+    for(int i=0; i<n; i++){
+        v.push_back(i);
+    }
+    cout << v.size() << endl;
+    cout << v.capacity() << endl;
 }
 
 int main(){

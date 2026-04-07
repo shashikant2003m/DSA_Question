@@ -10,7 +10,8 @@ void vectors(){
     cout << v[0] << endl;
     cout << v.at(2) << endl;
     cout << v.size() << endl;       // number of elements
-    cout << v.capacity() << endl;   // allocated memory
+    int cap = v.capacity();
+    cout << cap << endl;   // allocated memory
 }
 
 int main(){

@@ -22,5 +22,11 @@ void vectors(){
 }
 
 int main(){
+    vector<int> p(5, 100); // vector of size 5 with all elements as 100
+    cout << p[0] << endl;
+    cout << p[1] << endl;
+    cout << p[2] << endl;
+    cout << p[3] << endl;
+    cout << p[4] << endl;
     vectors();
 }

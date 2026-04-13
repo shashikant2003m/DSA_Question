@@ -14,6 +14,13 @@ int main(){
         n = n / 10;
     }
 
-    
+    cout << "Result : " << temp << endl;
+
+    if(p == temp){
+        cout << "Palindrome";
+    }
+    else{
+        cout << "Not Palindrome";
+    }
     
 }

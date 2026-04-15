@@ -1,16 +1,22 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int f(int cnt) {
-    if(cnt == 5) {
-        return 0;
-    }
-    cout << cnt << endl;
-    cnt++;
-    f(cnt);
-}
-
 int main() {
-    int cnt = 0;
-    f(cnt);
+    string str = "hello";
+
+    int start = 0;
+    int end = str.length() - 1;
+
+    while (start < end) {
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+
+        start++;
+        end--;
+    }
+
+    cout << str;
+
+    return 0;
 }

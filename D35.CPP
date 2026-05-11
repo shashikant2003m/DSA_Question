@@ -16,6 +16,8 @@ int main() {
         if(arr[i].first == arr[i].second){
             cout << "Square" << endl;
         }
-        
+        else{
+            cout << "Rectangle" << endl;
+        }
     }
 }

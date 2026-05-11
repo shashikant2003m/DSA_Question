@@ -11,5 +11,8 @@ int main() {
         cin >> arr[i].second;
     }
 
-    
+    for (int i = 0; i < n; i++)
+    {
+        
+    }
 }
